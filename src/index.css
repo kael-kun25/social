@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=Barriecito&family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
+html {
+  scroll-behavior: smooth;
+}
+* {
+  font-family: "Barriecito", cursive;
+  font-family: "Poppins", sans-serif;
+}
+.background {
+  background: linear-gradient(rgba(0, 0, 0, 0.733), rgba(1, 44, 109, 0.623));
+}
+.shadow {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  -webkit-box-shadow: 0 0 0px 1000px white inset !important;
+}
+.navshadow {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+    rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+.sideshadow {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+.left {
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollable-flex {
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch; /* For smoother scrolling on iOS */
+}
+.circle {
+  border-radius: 50%;
+}
